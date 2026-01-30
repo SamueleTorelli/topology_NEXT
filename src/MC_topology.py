@@ -201,7 +201,9 @@ def build_2d_counts_df(df, DT):
     
     return pd.DataFrame(data)
 
-def build_3d_counts_df(df, DT, DL, rebin = 1):
+def build_3d_counts_df(df, DT, DL, rebin=1):
+
+  
     """
     df: DataFrame with columns ['x','y','z','nel']
     DT, DL: parameters to compute Gaussian sigmas in XY and Z
